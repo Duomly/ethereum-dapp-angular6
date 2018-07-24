@@ -1,0 +1,14 @@
+<h1>Games history</h1>
+<table class="ui inverted green table">
+  <thead>
+    <tr><th>No</th>
+    <th>Winner Address</th>
+    <th>Amount</th>
+  </tr></thead><tbody>
+    <tr *ngFor="let game of history; let i = index">
+      <td>{{i +1 }}</td>
+      <td>{{game.address}}</td>
+      <td>{{game.amount}}</td>
+    </tr>
+  </tbody>
+</table>
