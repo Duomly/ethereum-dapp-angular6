@@ -1,0 +1,19 @@
+<div id="bets">
+  <h1>Game bets</h1>
+  <table class="ui inverted green table">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Avatar</th>
+        <th>Bet Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bet of bets; let i = index">
+        <td>{{i +1 }}</td>
+        <td><img class="avatar" src={{bet.avatar}}/></td>
+        <td>{{bet ? bet.address.slice(1,15) : bet}}...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

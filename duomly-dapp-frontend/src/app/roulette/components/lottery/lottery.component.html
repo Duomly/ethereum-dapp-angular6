@@ -1,0 +1,13 @@
+
+<div class="last_winner" *ngIf="!loading">
+  <h2>Last winner</h2>
+  <p class="winner">{{lastWinner ? lastWinner : 'It\'s first game'}}</p>
+</div>
+<div *ngIf="loading">
+    <h2>Wait for mine block...</h2>
+    <p>It shouldn't take more than 20 sec (on your own network).</p>
+</div>
+<div *ngIf="!loading" class="buttons">
+  <button class="ui green button" (click)="bet()">Bet</button>
+  <button class="ui orange button" (click)="play()">Play</button>
+</div>

@@ -1,0 +1,18 @@
+<div class="total column">
+    <h2>Total bet: </h2>
+    <span>DC {{totalBet}}</span>
+</div>
+<div class="column">
+    <h2>Game info:</h2>
+
+    <p>Your address: {{account ? account.slice(2,17) : account}}...</p>
+    <p>Your balance: DC {{balance ? balance.slice(0,15) : balance}}...</p>
+    <p>One bet is: {{betValue}}</p>
+    <p>Amount of bets: {{bets}}</p>
+    <p>Amount of your bets: {{myBets}}</p>
+</div>
+<div class="chance column">
+    <h2>Win chance: </h2>
+    <span>{{chance}}%</span>
+</div>
+
